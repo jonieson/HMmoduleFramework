@@ -1,3 +1,4 @@
 # HMmoduleFramework
 
-pod 'NewsManager', '~> 1.0.1'
+pod 'NewsManager', '~> 1.0.2'
+
