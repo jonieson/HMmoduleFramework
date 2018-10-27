@@ -11,4 +11,5 @@
 
 @interface Ycbhm_gs45lNewsCommentViewController : TMViewController
 @property (nonatomic,strong)NSString *artid;
+@property (nonatomic,assign)BOOL channel;
 @end
