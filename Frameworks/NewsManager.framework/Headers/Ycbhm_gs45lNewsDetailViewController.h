@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <TMSDK/TMViewController.h>
+#import <SetI001/SetI001.h>
 @interface Ycbhm_gs45lNewsDetailViewController : TMViewController
 @property (nonatomic,strong)NSString *pdId;
 @property (nonatomic,strong)NSString *urlpath;

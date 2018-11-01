@@ -76,6 +76,14 @@
 		<data>
 		Q1zHbUNQxnZG+vqkipYifX53wcI=
 		</data>
+		<key>banck@2x.png</key>
+		<data>
+		uFDN+3J0s6z5iap45dMp9ZCGVHk=
+		</data>
+		<key>banck@3x.png</key>
+		<data>
+		2yiSKr6NqhVaGTGoq3U6Rwsib4M=
+		</data>
 		<key>circle@2x.png</key>
 		<data>
 		OS1y22xc591JC6TQ1d6Q/bHNAE0=
@@ -331,6 +339,28 @@
 			<key>hash2</key>
 			<data>
 			Dq7mJzX+IgSRb+cK+yZriWohqjMyGQ2/BgAV8t7UEsI=
+			</data>
+		</dict>
+		<key>banck@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uFDN+3J0s6z5iap45dMp9ZCGVHk=
+			</data>
+			<key>hash2</key>
+			<data>
+			EmMhmJvnM1kQ/8lclAdieom4rZy+PzlypNX0JvUYyQA=
+			</data>
+		</dict>
+		<key>banck@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2yiSKr6NqhVaGTGoq3U6Rwsib4M=
+			</data>
+			<key>hash2</key>
+			<data>
+			sdrENJPm20u1Q9woyVt7cPKjYUDyAuk6VzBy7hx+QLg=
 			</data>
 		</dict>
 		<key>circle@2x.png</key>

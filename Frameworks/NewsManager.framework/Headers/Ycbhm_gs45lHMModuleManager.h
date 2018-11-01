@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface Ycbhm_gs45lHMModuleManager : NSObject
 @property (nonatomic,strong)NSString *baseServer;
 @property (nonatomic,strong)NSString *userId;
-@property (nonatomic,strong)NSString *memberCode;
-@property (nonatomic,strong)NSString *token;
+//@property (nonatomic,strong)NSString *memberCode;
+//@property (nonatomic,strong)NSString *token;
+@property (nonatomic,strong)UIColor *themeColor;
 +(Ycbhm_gs45lHMModuleManager *)shareManager;
 @end
