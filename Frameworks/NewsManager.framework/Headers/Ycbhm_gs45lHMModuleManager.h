@@ -14,5 +14,6 @@
 //@property (nonatomic,strong)NSString *memberCode;
 //@property (nonatomic,strong)NSString *token;
 @property (nonatomic,strong)UIColor *themeColor;
+@property (nonatomic,strong)UIColor *titleColor;
 +(Ycbhm_gs45lHMModuleManager *)shareManager;
 @end
