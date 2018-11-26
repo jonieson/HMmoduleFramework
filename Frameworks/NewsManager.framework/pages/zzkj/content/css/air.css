@@ -1,0 +1,110 @@
+.air{
+  background: url(../images/weather/bg1.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.air .tool{
+  background: transparent;
+}
+.air .top{
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.air .top h2{
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-top: .8rem;
+  margin-bottom: .5rem;
+}
+.air .top .level{
+  font-size: .24rem;
+}
+.air .top .level span{
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 .2rem;
+  line-height: .4rem;
+  color: #fff;
+  font-size: .24rem;
+  height: .4rem;
+  border-radius: .2rem;
+}
+.air .top .weather{
+  font-size: .36rem;
+  line-height: .32rem;
+  margin: .3rem 0 .4rem;
+}
+.air .top .weather a{
+  color: #fff;
+}
+.air .top .weather .tem{
+  margin-left: .12rem;
+}
+.air section h3{
+  font-size: .28rem;
+  line-height: .6rem;
+  color: #ccc;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: .4rem;
+}
+.air .detail{
+  padding: 0 .22rem;
+  overflow: hidden;
+}
+.air .detail li{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 .12rem;
+  margin-bottom: .4rem;
+}
+.air .detail .data{
+  overflow: hidden;
+  color: #fff;
+  line-height: 1;
+  padding-bottom: .1rem;
+}
+.air .detail .data .sub{
+  float: left;
+}
+.air .detail .data .sub h4{
+  font-size: .24rem;
+  margin-bottom: .1rem;
+}
+.air .detail .data .sub p{
+  font-size: .2rem;
+  color: #ccc;
+}
+.air .detail .data .num{
+  float: right;
+  font-size: .5rem;
+  margin-top: .1rem;
+}
+.air .detail .level{
+  height: .08rem;
+}
+.air .obj{
+  padding: 0 .34rem;
+}
+.air .obj li{
+  font-size: .24rem;
+  color: #fff;
+  line-height: .4rem;
+  padding-left: .5rem;
+  position: relative;
+  margin-bottom: .2rem;
+}
+.air .obj i{
+  display: inline-block;
+  width: .4rem;
+  height: .4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.air .obj .house{
+  background: url(../images/house.png) no-repeat;
+  background-size: 100% 100%;
+}

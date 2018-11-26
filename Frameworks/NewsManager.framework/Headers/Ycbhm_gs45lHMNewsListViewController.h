@@ -1,5 +1,5 @@
 //
-//  Ycbhm_gs45lNewsListViewController.h
+//  Ycbhm_gs45lHMNewsListViewController.h
 //  NewsManager
 //
 //  Created by JD on 2018/9/14.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <TMSDK/TMViewController.h>
 
-@interface Ycbhm_gs45lNewsListViewController : TMViewController
+@interface Ycbhm_gs45lHMNewsListViewController : TMViewController
 @property (nonatomic,strong)NSString *navTitle;
 @end

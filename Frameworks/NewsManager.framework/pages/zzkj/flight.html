@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta content="telephone=no" name="format-detection" /> 
+  <meta name="author" content="kn" />
+  <link type="text/css" rel="stylesheet" href="content/css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="content/css/common.css" />
+  <link type="text/css" rel="stylesheet" href="content/css/traffic.css" />
+  <link type="text/css" rel="stylesheet" href="content/css/jquery-weui.min.css"  />
+  <link type="text/css" rel="stylesheet" href="content/css/jquery-weui.min.css" />
+  <title>航班查询</title>
+</head>
+<body class="traffic mt44">
+  <div class="container">
+    <div class="tool">
+      <a href="index.html" class="back"><i></i></a>
+      <h1>航班查询</h1>
+    </div>
+    <div class="form weui-cells weui-cells_form">
+      <div class="form-div eui-cell">
+        <span class="icon jp"></span>
+         <input class="weui-input" id="start" type="text" value="湖北省 武汉市 武昌区">
+       <!-- <input type="text" placeholder="请输入出发城市">-->
+      </div>
+      <div class="form-div">
+        <span class="icon jp"></span>
+         <input class="weui-input" id="end" type="text" value="">
+        <!--<input type="text" placeholder="请输入到达城市">-->
+      </div>
+      <div class="form-div">
+      	<!--onclick="window.open('航班查询-日期.html')"-->
+        <span class="icon date"></span> 
+        <input class="weui-input" id="time3" type="text">
+        <!--<input type="text" value="2018-07-19">-->
+      </div>
+      <div class="submit"><a href="flightList.html">查 询</a></div>
+    </div>
+  </div>
+  
+    <!--<script src="../lib/jquery-2.1.4.js"></script>
+<script src="../lib/fastclick.js"></script>-->
+<script src="content/lib/jquery-2.1.4.js"></script>
+	<script src="content/lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<!--<script src="../js/jquery-weui.js"></script>
+    <script src="../js/city-picker.js"></script>-->
+    <script src="content/js/weui/jquery-weui.min.js"></script>
+    <script src="content/js/weui/city-picker.js"></script>
+     <script>
+      $("#start").cityPicker({
+        title: "选择出发地",
+        onChange: function (picker, values, displayValues) {
+          console.log(values, displayValues);
+        }
+      });
+      $("#end").cityPicker({
+        title: "选择目的地"
+      });
+      
+      $("#time3").datetimePicker({
+        times: function () {
+          return [
+            {
+              values: ['上午', '下午']
+            }
+          ];
+        },
+        value: '2012-12-12 上午',
+        onChange: function (picker, values, displayValues) {
+          console.log(values);
+        }
+      });
+      
+//    $("#home-city").cityPicker({
+//      title: "选择目的地",
+//      showDistrict: false,
+//      onChange: function (picker, values, displayValues) {
+//        console.log(values, displayValues);
+//      }
+//    });
+    </script>
+</body>
+</html>

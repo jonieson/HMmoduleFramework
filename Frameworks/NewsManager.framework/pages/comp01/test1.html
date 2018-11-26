@@ -9,32 +9,33 @@
         <h1>首页</h1>
 
         <br>
-        <input type="button" onclick="buttonClick()" value="以原生窗口方式弹出一个新窗口（test.html）"/>
+        <input type="button" onclick="buttonClick()" value="以原生窗口方式弹出一个Html新窗口"/>
         </br>
         <br/>
         <br>
-        <input type="button" onclick="buttonClick1()" value="弹出一个原生窗口（Test1ViewController）"/>
+        <input type="button" onclick="buttonClick1()" value="弹出一个原生窗口（Comp01ViewController）"/>
         </br>
         <br/>
         <br>
         <input type="button" onclick="buttonClick2()" value="摄像头照片"/>
         </br>
+        <div id="img"></div>
         <br/>
         <br>
         <input type="button" onclick="buttonClick3()" value="获取设备信息"/>
         </br>
         <br>
-        <input type="button" onclick="buttonClick4()" value="定位开始"/>
+<!--        <input type="button" onclick="buttonClick4()" value="定位开始"/>-->
         <input type="button" onclick="buttonClick5()" value="获取位置信息"/>
-        <input type="button" onclick="buttonClick6()" value="定位结束"/>
+<!--        <input type="button" onclick="buttonClick6()" value="定位结束"/>-->
         </br>
         <br>
         <input type="button" onclick="buttonClick7()" value="WIFI信息"/>
         </br>
-        <br>
-        <input type="button" onclick="buttonClick8()" value="地图"/>
-        </br>
-        
+<!--        <br>-->
+<!--        <input type="button" onclick="buttonClick8()" value="地图"/>-->
+<!--        </br>-->
+
         <script type="text/javascript" src="../../tm_src/exec/cordova.js"></script>
         <script type="text/javascript" src="../../tm_src/exec/cordova_plugins.js"></script>
         <script type="text/javascript" src="../../tm_src/plugins/tm-plugin-controller/www/tmcontroller.js"></script>
@@ -46,18 +47,39 @@
 
         <script type="text/javascript">
         function buttonClick(){
-<!--            cordova.exec(success, error, "TMController", "presentCtr", [true, "test.html", "pages/comp01"]);-->
-                cordova.exec(success, error, "TMController", "pushCtr", [true, "test.html", "pages/comp01"]);
+            cordova.exec(success, error, "TMController", "presentCtr", [true, "test.html", "pages/comp01"]);
+            <!--            cordova.exec(success, error, "TMController", "pushCtr", [true, "test1.html", "pages"]);-->
             <!--            cordova.exec(success, error, "TMController", "dismissCtr", [true]);-->
             <!--            cordova.exec(success, error, "TMController", "popCtr", [true]);-->
         }
+        function success1(){
+            alert("调用成功");
+        }
+        function error1(){
+            alert("调用失败");
+        }
+        
         function buttonClick1(){
-            cordova.exec(success, error, "TMController", "pushToNative", [true, "Test1ViewController", "param"]);
+            cordova.exec(success, error, "TMController", "pushToNative", [true, "Comp01ViewController", "param"]);
         }
         function buttonClick2(){
                         navigator.camera.getPicture(function success(msg)
                                                     {
-                                                    alert("获取到图片，地址为:\n"+msg);
+                                                    //创建img对象
+                                                    　　var img=new Image();
+
+                                                    　　//开始下载图像
+                                                    　　img.src=msg;
+                                                    　　//你打算把动态加载的图片放在那里的div容器
+                                                    　　var imgContainer=document.getElementById("img");
+                                                    　　//将创建好的图像对象添加到div中
+                                                    　　imgContainer.appendChild(img);
+                                                    img.onload=function(){
+                                                    this.height=200+"px";
+                                                    this.width=198+"px";
+                                                    
+                                                    }
+<!--                                                    alert("获取到图片，地址为:\n"+msg);-->
                                                     }, error, "Camera", "getPicture",{"quality": "50","destinationType": "Camera.DestinationType.FILE_URI"});
         }
         function buttonClick3(){
@@ -120,7 +142,7 @@
         }
         function buttonClick8(){
             <!--            navigator.app.exitApp();-->
-<!--            cordova.exec(success, error, "TMController", "presentCtr", [true, "gdmap.html", "pages"]);-->
+            cordova.exec(success, error, "TMController", "presentCtr", [true, "gdmap.html", "pages/comp01"]);
         }
         function success(){
             alert("调用成功");

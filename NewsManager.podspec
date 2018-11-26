@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 s.name         = "NewsManager"
-s.version      = "2.0.0"
+s.version      = "2.0.1"
 s.summary      = "HM新闻组件"
 s.homepage     = "https://github.com/jonieson/HMmoduleFramework.git"
 s.license      = { :type => "MIT", :file => "LICENSE" }
