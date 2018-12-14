@@ -15,7 +15,7 @@
 @property (nonatomic,strong)UIImageView *priseImg;
 @property (nonatomic,strong)UILabel *priseLab;
 @property (nonatomic,strong)UILabel *contentLab;
-@property (nonatomic,strong)void(^clickModel)(void);
+@property (nonatomic,strong)void(^clickModel)();
 
 @property (nonatomic,strong)Ycbhm_gs45lCommentModel *model;
 @end

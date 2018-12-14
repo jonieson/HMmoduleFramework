@@ -15,6 +15,5 @@
 @property (nonatomic,strong)NSString *priseCount;
 @property (nonatomic,strong)NSString *content;
 @property (nonatomic,strong)NSString *commentId;
-@property (nonatomic,assign)int priseStatus;
 +(Ycbhm_gs45lCommentModel *)jsonWithModel:(NSDictionary *)dic;
 @end
