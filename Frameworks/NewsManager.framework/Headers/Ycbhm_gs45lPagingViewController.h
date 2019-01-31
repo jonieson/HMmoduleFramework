@@ -13,7 +13,7 @@
 #import <TMSDK/TMViewController.h>
 
 static const CGFloat JXTableHeaderViewHeight = 200;
-static const CGFloat JXheightForHeaderInSection = 50;
+static const CGFloat JXheightForHeaderInSection = 80;
 
 @interface Ycbhm_gs45lPagingViewController : TMViewController <JXPagerViewDelegate>
 
